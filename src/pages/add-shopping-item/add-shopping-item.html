@@ -1,0 +1,29 @@
+<ion-header>
+
+  <ion-navbar color="secondary">
+    <ion-title>AddShoppingItem</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+
+  <ion-item>
+    <ion-label>Nome</ion-label>
+    <ion-input [(ngModel)]="item.nome" placeholder="Computador"></ion-input>
+  </ion-item>
+
+  <ion-item>
+    <ion-label>Quantidade</ion-label>
+    <ion-input [(ngModel)]="item.quantidade" type="number" placeholder="10"></ion-input>
+  </ion-item>
+
+  <ion-item>
+      <ion-label>Preço</ion-label>
+      <ion-input [(ngModel)]="item.preco" type="number" placeholder="999"></ion-input>
+  </ion-item>
+
+  <button ion-button block clear (click)="adicionarItem(item)">Adicionar</button>
+
+</ion-content>
